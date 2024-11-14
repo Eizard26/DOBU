@@ -1,0 +1,35 @@
+
+    .thankuhd{
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.7em;
+    color:white;
+    text-transform: uppercase;
+    }
+    .thankuhd:after{
+    content:"";
+    background: #ffc800;
+    width:auto;
+    height:2px;
+    display:block;
+    bottom:0;
+    
+    transition: all 0.4s;
+    }
+    .thankucontent {
+        font-size: 1.1em; /* Regular font size */
+        line-height: 1.5; /* Improved line spacing */
+        color: #ffffff; /* Yellow color */
+        font-family: PT sans-serif;
+    }
+    #thankubox{
+            margin-top: 100px;
+            margin-bottom: 170px;
+            background-color: #111; /* Dark gray for contrast */
+            padding: 20px; /* Padding around text */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5); /* Yellow shadow for effect */
+            justify-content: center;
+            align-items: center;
+            width:700px;
+        }

@@ -1,0 +1,15 @@
+.coursehd{
+    text-align: left;
+    color:white;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+.coursehd::after{
+    content:"";
+    background: #ffc800;
+    width:160px;
+    height:3px;
+    display:block;
+    bottom:0;
+
+}

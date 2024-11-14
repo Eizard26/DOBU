@@ -1,0 +1,123 @@
+/* Container styling */
+.contact-container {
+    padding: 40px;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: #FFD43B;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Left column with information */
+#e {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 212, 67, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative overlay for gradient effect */
+#e::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 212, 67, 0.1), transparent);
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+/* Headings */
+.subhd {
+    font-size: 1.3rem;
+    color: #FFD43B;
+    font-weight: 500;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.packagehd {
+    font-size: 2.8rem;
+    color: #FFD43B;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #FFD43B;
+    padding-bottom: 10px;
+}
+
+/* Icon and text styling */
+#e p {
+    color: #FFFFFF;
+    margin: 10px 0;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+#e i {
+    color: #FFD43B;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+/* Specific styling for highlighted text */
+#e p:nth-of-type(2),
+#e p:nth-of-type(4),
+#e p:nth-of-type(6) {
+    color: #FFD43B;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Hover effect */
+#e p:hover {
+    color: #FFD43B;
+    text-shadow: 0px 0px 10px rgba(255, 212, 67, 0.6);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.contact-container .row {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.map-responsive {
+    position: relative;
+    height: 100%; /* Makes the map fill the height of its column */
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures iframe matches the column height */
+    border: 0;
+}
+
+/* Additional CSS to ensure map is visible on smaller screens */
+@media (max-width: 768px) {
+    .contact-container .row {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+
+    .map-responsive {
+        height: 400px; /* Set a fixed height for the map on smaller screens */
+    }
+}

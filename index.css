@@ -1,0 +1,308 @@
+#con{
+   background-color: hsl(0, 0%, 0%);
+}
+.body{
+    background-color: rgb(13, 11, 0);
+}
+/*style for logo*/
+#logo{
+    width: 120px;
+    height: auto;
+}
+/*for nav*/
+#navitem{
+    display:flex;
+    justify-content: space-between;
+}
+#link{
+    font-family: sans-serif;
+    font-size: 17px;
+    color:white;
+    text-transform: uppercase;
+}
+#link:after{
+    content:"";
+    background: #ffc800;
+    width:auto;
+    height:2px;
+    display:block;
+    bottom:0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+#link:hover::after{
+    opacity: 1;
+}
+/*for login*/
+#login{
+    color: #ffc800;
+    font-size:17px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    border:2px solid #ffc800;
+    width:100px;
+    height: 47px;
+    Border-radius:70px;
+    padding-left: 28px;
+    margin-left: 30px;
+}
+#login:hover{
+    background-color: #ffc800;
+    color:rgb(8, 3, 3);
+    border:2px solid black;
+    transition: 0.6s;
+}
+.navbar-toggler-icon{
+    background-color: #ffc800;
+    
+}
+/*for responsive logo*/
+@media (max-width: 992px) {
+    #login {
+        margin-left: 0; /* Remove or set a smaller margin on mobile */
+    }
+}
+
+/*Introduction part*/
+.intro-part {
+    
+    background-image: url('image/intro.jpg');
+    background-size: cover;
+    background-position: center bottom; /* Aligns the image to show more of the bottom */
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 70vh; /* Or any height you prefer */
+}
+.wel{
+    font-weight: bold;
+    font-size: 60px;
+    color:white;
+    padding-top: 180px;
+    font-family: sans-serif;
+
+}
+@media (max-width: 1024px){
+    .wel{
+        padding-top:300px;
+    }
+}
+@media (max-width: 992px){
+    .wel{
+        padding-top:180px;
+    }
+}
+@media (max-width:768px){
+    .wel{
+        padding-top:20px;
+    }
+}
+/* for under line*/
+.wel:after{
+    content:"";
+    background: goldenrod;
+    width:auto;
+    height:3px;
+    display:block;
+    bottom:0;
+    transition: all 0.4s;
+
+}
+.welcontent{
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    font-family: PT sans-serif;
+    font-size: 25px;
+}
+.registerbut{
+    font-size: 17px;
+    font-weight: 700;
+    padding-top: 9px;
+    color: rgb(0, 0, 0);
+    background-color: #ffc800;
+    width:146px;
+    height: 46px;
+    border-radius: 10px;
+    border:2px solid white;
+    cursor: pointer;
+}
+.registerbut:hover{
+    
+    border:2px solid #ffc800;
+    background-color:black;
+    color:white;
+    transition: 0.4s;
+}
+
+/* end of intro*/
+.feahd, .galleryhd{
+    padding-top: 50px;
+    text-align: left;
+    font-family: sans-serif;
+    color:white;
+    font-size: 33px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+.feahd:after{
+    content:"";
+    background: #ffc800;
+    width:150px;
+    height:3px;
+    display:block;
+    bottom:20px;
+
+}
+.galleryhd:after{
+    content:"";
+    background: #ffc800;
+    width:220px;
+    height:3px;
+    display:block;
+    bottom:20px;
+
+}
+
+#focus{
+    width: auto;
+    height: 190px;
+    object-fit: cover;
+    
+}
+.card{
+    width:100%;
+    max-width: 18rem;
+    height:1000px;
+    margin-bottom:20px;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+}
+.card:hover{
+    box-shadow: 0px 5px 15px goldenrod;
+}
+
+#img{
+    height:187px;
+    object-fit:contain;
+}
+#featurespart{
+    padding-top: 50px;
+}
+#galleryph{
+    max-width: 100%;
+    height:450px;
+    filter: grayscale(100%);
+    transition: transform 0.3s;
+}
+#galleryph:hover{
+    transform: scale(1.19); 
+    filter: grayscale(0%);
+}
+.feat{
+    text-align: left;
+    font-weight: bold;
+    
+    color:white;
+
+    font-family: sans-serif;
+}
+.feat::after{
+    content:"";
+    background: #ffc800;
+    width:auto;
+    height:3px;
+    display:block;
+    bottom:0;
+    opacity: 0.7;
+}
+#featcontent{
+        text-align: left;
+        color:white;
+        font-family: PT sans-serif;
+}
+/*footer*/
+#Quicklink, #infolink, .cusinfo{
+    padding-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    display: inline-block;
+    font-family: sans-serif;
+    
+}
+#infolink:after{
+    content:"";
+    background: #ffc800;
+    width:100%;
+    height:2px;
+    display:block;
+    opacity: 0;
+    bottom:0;
+    transition: 0.9s;
+}
+#infolink:hover::after{
+    opacity: 1;
+}
+#Quicklink:after{
+    content:"";
+    background: #ffc800;
+    width:100%;
+    height:2px;
+    display:block;
+    opacity: 0;
+    bottom:0;
+    transition: 0.4s;
+}
+#Quicklink:hover::after{
+    opacity: 1;
+}
+.foothd, .infohd, .cushd{
+    font-weight: bold;
+    color:goldenrod;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+@media (max-width:768px){
+    #Quicklink, #infolink, .cusinfo{
+    padding-left: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    }
+    .foothd, .infohd{
+    color:#ffc800;
+    font-size: 18px;
+    font-family: sans-serif;
+    }
+}
+@media (max-width:1400px){
+    .cushd{
+        font-weight: bold;
+    color:#ffc800;
+    font-size: 22px;
+    font-family: sans-serif;
+    }
+}
+@media (max-width:1400px){
+    .cushd{
+        font-weight: bold;
+    color:#ffc800;
+    font-size: 19px;
+    font-family: sans-serif;
+    }
+}
+#con {
+    background-color: hsl(0, 0%, 0%);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+.gc .row {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+

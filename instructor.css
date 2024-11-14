@@ -1,0 +1,106 @@
+#cla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+#box:hover{
+    transform: scale(1.05);
+}
+.instructorhd:after{
+    content:"";
+    background: #ffc800;
+    width:150px;
+    height:3px;
+    display:block;
+    bottom:20px;
+}
+.instructorhd, #cardhd{
+    text-align: left;
+    font-family: sans-serif;
+    color:white;
+    font-size: 33px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+#cardhd{
+    text-align: left;
+    font-family: sans-serif;
+    color:white;
+    font-size: 19px;
+    
+}
+#cardhd::after{
+    content:"";
+    background: #ffc800;
+    height:3px;
+    display:block;
+    bottom:20px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    display: none; /* Initially hidden */
+}
+.card {
+    position: relative; /* Ensure overlay is positioned correctly */
+}
+.coachcontent{
+    font-family: PT sans-serif;
+    color:#ffc800;
+    font-size: 22px;
+}
+/* Base Tooltip Styles */
+.tooltip {
+    position: absolute;
+    bottom: 30px;  /* Slightly adjusted to be more centered */
+    left: 50%;
+    transform: translateX(-50%);  /* To center the tooltip horizontally */
+    background-color: #333;  /* Dark background */
+    color: #f0d800;  /* Bright yellow text */
+    padding: 10px 20px;  /* Increased padding for a more spacious look */
+    font-size: 16px;  /* Larger text */
+    border-radius: 8px;  /* Smooth rounded corners */
+    font-weight: 600;  /* Bolder text */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;  /* Fade-in/out effect */
+    z-index: 10;
+}
+
+/* Tooltip when card is hovered */
+.card:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;  /* Smooth fade-in */
+}
+
+/* Optional: Add animation for tooltip content */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #333;  /* Tooltip arrow */
+}

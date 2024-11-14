@@ -1,0 +1,107 @@
+
+.login-container {
+    background-color: #222;
+    padding: 80px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(255, 128, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    color: yellow;
+    
+  }
+
+  h2 {
+    color: yellow;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  .form-label {
+    color: yellow;
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: yellow;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .form-control:focus {
+    border-color: yellow;
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+  }
+
+  .btn-outline-warning {
+    color: yellow;
+    border-color: yellow;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 48%;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-warning:hover {
+    background-color: yellow;
+    color: black;
+    border-color: yellow;
+  }
+
+  /* Add a subtle background pattern for a more dynamic look */
+  #box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.ui-tooltip, .arrow:after {
+  background: black;
+  border: 2px solid white;
+}
+.ui-tooltip {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font: bold 14px "Helvetica Neue", Sans-Serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 7px black;
+}
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.arrow.top {
+  top: -16px;
+  bottom: auto;
+}
+.arrow.left {
+  left: 20%;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px black;
+  transform: rotate(45deg);
+}
+.arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}

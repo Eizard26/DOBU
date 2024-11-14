@@ -1,0 +1,10 @@
+#carouselExampleFade {
+    width: 80%; /* Adjust width as needed */
+    margin: auto; /* Center the carousel */
+}
+
+.carousel-item img {
+    width: 100%; /* Ensure images cover the carousel width */
+    height: 500px; /* Set a fixed height for images */
+    object-fit: contain; /* Maintain aspect ratio and cover the area */
+}

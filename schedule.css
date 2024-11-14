@@ -1,0 +1,20 @@
+
+.schedulehd{
+        text-align: left;
+        font-size: 1.7em; /* Increase font size for emphasis */
+        color: #fffffd; /* Yellow color */
+        margin-bottom: 20px; /* Space below */
+        font-weight: bold; /* Bold text */
+        text-transform: uppercase; /* Uppercase for a strong appearance */
+        letter-spacing: 1px;
+
+}
+.schedulehd:after{
+        content:"";
+        background: #ffc800;
+        width:400px;
+        height:3px;
+        display:block;
+        font-family: sans-serif;
+        bottom:20px;
+}
